@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>America 250 Art Takeover | Color Reflections Philadelphia</title>
+<meta name="description" content="Submit one horizontal artwork file for a shot at the Color Reflections Philadelphia headquarters wall mural for America's 250th. Runners-up featured on N 5th Street pole banners. Submissions close June 24, 2026." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Archivo+Black&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cr: {
+            blue: '#0e479b',
+            bluedeep: '#082f6a',
+            skyblue: '#3f93ff',
+            orange: '#f77e23',
+            yellow: '#ffad29',
+            green: '#8fd72f',
+            red: '#c8102e',
+            ink: '#161617',
+            paper: '#fbf7f0',
+          }
+        },
+        fontFamily: {
+          sans: ['"Source Sans Pro"', 'system-ui', 'sans-serif'],
+          display: ['"Archivo Black"', '"Source Sans Pro"', 'system-ui', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Source Sans Pro', system-ui, sans-serif; background:#fbf7f0; color:#161617; -webkit-font-smoothing: antialiased; }
+  .display { font-family: 'Archivo Black', 'Source Sans Pro', system-ui, sans-serif; letter-spacing: -0.02em; line-height: 0.95; }
+  .grid-paper {
+    background-image:
+      linear-gradient(rgba(14,71,155,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(14,71,155,0.07) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .underline-marker {
+    background: linear-gradient(transparent 60%, #ffad29 60%);
+    padding: 0 0.15em;
+  }
+  .btn-primary {
+    background:#0e479b; color:#fff; font-weight:700;
+    transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary:hover { background:#082f6a; transform: translateY(-1px); box-shadow: 0 8px 0 0 #ffad29; }
+  .btn-secondary {
+    background:#161617; color:#fff; font-weight:700;
+    transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+  }
+  .btn-secondary:hover { background:#0e479b; transform: translateY(-1px); box-shadow: 0 8px 0 0 #8fd72f; }
+  .card-shadow { box-shadow: 8px 8px 0 0 #161617; }
+  .card-shadow-blue { box-shadow: 8px 8px 0 0 #0e479b; }
+  .card-shadow-orange { box-shadow: 8px 8px 0 0 #f77e23; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display:none; }
+  details[open] .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform .2s ease; }
+  .step-num {
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  .anchor-offset { scroll-margin-top: 84px; }
+  .photo-frame { position: relative; overflow: hidden; }
+  .photo-frame > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  /* Hide any white-label / third-party branding the embedded form may render */
+  #cr-submission-form a[href*="vendasta" i],
+  #cr-submission-form [class*="poweredBy" i],
+  #cr-submission-form [class*="powered-by" i],
+  #cr-submission-form [class*="branding" i],
+  #cr-submission-form [class*="white-label" i] {
+    display: none !important;
+  }
+</style>
+</head>
+<body class="bg-cr-paper text-cr-ink">
+
+<!-- STICKY NAV -->
+<header class="sticky top-0 z-50 bg-white border-b-4 border-cr-ink">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20">
+    <a href="#top" class="flex items-center gap-2">
+      <img src="images/logo.png" alt="Color Reflections Philadelphia" class="h-9 sm:h-11 w-auto" />
+    </a>
+    <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-bold uppercase tracking-wider">
+      <a href="#prizes" class="hover:text-cr-blue">Prizes</a>
+      <a href="#dates" class="hover:text-cr-blue">Dates</a>
+      <a href="#specs" class="hover:text-cr-blue">Specs</a>
+      <a href="#faq" class="hover:text-cr-blue">FAQ</a>
+    </nav>
+    <a href="#submit" class="btn-primary inline-flex items-center px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm uppercase tracking-wider rounded-sm">
+      Submit
+      <span class="ml-2">&rarr;</span>
+    </a>
+  </div>
+  <!-- Mobile sub-nav -->
+  <nav class="md:hidden flex justify-between items-center px-4 py-2 text-xs font-bold uppercase tracking-wider bg-cr-paper border-t border-cr-ink/10">
+    <a href="#prizes" class="px-2 py-1">Prizes</a>
+    <a href="#dates" class="px-2 py-1">Dates</a>
+    <a href="#specs" class="px-2 py-1">Specs</a>
+    <a href="#submit" class="px-2 py-1 text-cr-blue">Submit</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative overflow-hidden text-cr-ink">
+  <!-- Full-bleed photo background -->
+  <div class="absolute inset-0 z-0">
+    <img src="images/5.jpg" alt="Color Reflections Philadelphia headquarters on N 5th Street with the existing wall mural" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Light wash so the photo stays the star but text stays legible -->
+  <div class="absolute inset-0 z-0 bg-gradient-to-r from-cr-paper/85 via-cr-paper/50 to-cr-paper/20"></div>
+
+  <!-- Bottom fade into next section -->
+  <div class="absolute bottom-0 inset-x-0 h-28 z-0 bg-gradient-to-t from-cr-paper to-transparent pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+    <div class="max-w-lg lg:max-w-xl">
+      <!-- Headline -->
+      <h1 class="display text-[2.75rem] leading-[0.95] sm:text-6xl sm:leading-[0.9] lg:text-7xl text-cr-blue mb-5">
+        Your Art.<br/>
+        Our Wall.<br/>
+        <span class="underline-marker">Philly Watching.</span>
+      </h1>
+
+      <!-- Subheadline (kept short) -->
+      <p class="text-base sm:text-lg text-cr-ink leading-snug sm:leading-relaxed mb-6 max-w-md font-semibold">
+        Submit one horizontal artwork file for a shot at the Color Reflections headquarters wall mural. Runners-up may be featured on N 5th Street pole banners.
+      </p>
+
+      <!-- Badges -->
+      <div class="flex flex-wrap gap-2 sm:gap-3 mb-7">
+        <div class="bg-white border-2 border-cr-ink px-3 py-2 text-xs sm:text-sm">
+          <div class="uppercase tracking-widest text-[10px] text-cr-green leading-tight font-bold">Contest Launches</div>
+          <div class="font-black">June 1</div>
+        </div>
+        <div class="bg-white border-2 border-cr-ink px-3 py-2 text-xs sm:text-sm">
+          <div class="uppercase tracking-widest text-[10px] text-cr-orange leading-tight font-bold">Submissions Close</div>
+          <div class="font-black">June 24 &middot; 11:59 PM</div>
+        </div>
+        <div class="hidden sm:block bg-white border-2 border-cr-ink px-3 py-2 text-xs sm:text-sm">
+          <div class="uppercase tracking-widest text-[10px] text-cr-blue leading-tight font-bold">Grand Prize</div>
+          <div class="font-black">Headquarters Wall Mural</div>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <a href="#submit" class="btn-primary px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base uppercase tracking-wider text-center rounded-sm">
+          Start My Submission
+        </a>
+        <a href="#specs" class="btn-secondary px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base uppercase tracking-wider text-center rounded-sm">
+          View Art Specs
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEST SUMMARY -->
+<section class="bg-white border-y-4 border-cr-ink">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+      <!-- LEFT: AMERICA 250 graphic card -->
+      <div class="lg:col-span-5 relative">
+        <!-- Offset blue block behind (poster depth) -->
+        <div class="absolute -inset-2 sm:-inset-3 bg-cr-blue -rotate-2"></div>
+
+        <div class="relative bg-white border-4 border-cr-ink px-6 sm:px-8 lg:px-10 py-7 sm:py-10 lg:py-12 rotate-1 card-shadow overflow-hidden">
+          <!-- Thick red bar top -->
+          <div class="absolute top-0 inset-x-0 h-3 sm:h-4 bg-cr-red"></div>
+          <!-- Thick blue bar bottom -->
+          <div class="absolute bottom-0 inset-x-0 h-3 sm:h-4 bg-cr-blue"></div>
+
+          <!-- America 250 PNG as subtle accent texture (low opacity, offset to corner) -->
+          <img src="images/america-250.png" alt="" aria-hidden="true" class="absolute -right-16 sm:-right-20 lg:-right-24 -bottom-10 sm:-bottom-12 w-56 sm:w-72 lg:w-80 opacity-[0.10] pointer-events-none select-none" />
+
+          <!-- Halftone dot accent -->
+          <div class="absolute top-10 -right-4 w-24 h-16 pointer-events-none opacity-25 rotate-12" style="background-image: radial-gradient(#0e479b 2px, transparent 2px); background-size: 8px 8px;"></div>
+
+          <!-- Eyebrow -->
+          <div class="relative text-[10px] sm:text-xs uppercase tracking-[0.3em] font-black text-cr-red mb-4 sm:mb-5">
+            The Pitch &middot; Est. 1776
+          </div>
+
+          <!-- AMERICA label -->
+          <div class="relative display text-2xl sm:text-3xl lg:text-4xl text-cr-ink leading-none mb-1">
+            AMERICA
+          </div>
+
+          <!-- Giant 250 -->
+          <div class="relative display text-[6.5rem] sm:text-[9rem] lg:text-[12rem] text-cr-blue leading-[0.8] mb-2 sm:mb-3">
+            250
+          </div>
+
+          <!-- Sub-headline -->
+          <div class="relative display text-2xl sm:text-3xl lg:text-4xl text-cr-red leading-tight">
+            PHILLY TURNS UP.
+          </div>
+
+          <!-- Footer label row -->
+          <div class="relative mt-5 sm:mt-6 pt-3 sm:pt-4 border-t-2 border-cr-ink/10 flex items-center justify-between gap-3">
+            <div class="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-cr-blue">N 5th St &middot; Philly</div>
+            <div class="text-[10px] sm:text-xs uppercase tracking-widest font-black text-cr-orange">2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: campaign explanation + cards -->
+      <div class="lg:col-span-7 text-base sm:text-lg leading-relaxed text-cr-ink/90 space-y-4">
+        <p>
+          America is turning 250, and the walls should dress up for once. Color Reflections is opening our Philadelphia headquarters to local artists.
+        </p>
+        <p class="font-semibold text-cr-ink">
+          One artist wins the headquarters wall mural. Runners-up may be featured on N 5th Street pole banners.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-3 pt-2">
+          <div class="border-2 border-cr-ink p-3">
+            <div class="text-xs uppercase tracking-widest font-bold text-cr-blue">Grand Prize</div>
+            <div class="font-bold text-sm">HQ wall mural</div>
+          </div>
+          <div class="border-2 border-cr-ink p-3">
+            <div class="text-xs uppercase tracking-widest font-bold text-cr-green">Runners-Up</div>
+            <div class="font-bold text-sm">N 5th St pole banners</div>
+          </div>
+          <div class="border-2 border-cr-ink p-3">
+            <div class="text-xs uppercase tracking-widest font-bold text-cr-orange">One Deadline</div>
+            <div class="font-bold text-sm">June 24, 11:59 PM</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRIZES -->
+<section id="prizes" class="anchor-offset bg-cr-paper py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-12 sm:mb-16">
+      <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-orange mb-3">What Artists Can Win</div>
+      <h2 class="display text-4xl sm:text-6xl text-cr-blue">One file. Three ways to get seen.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+      <!-- Grand Prize: Headquarters Wall Mural -->
+      <div class="relative">
+        <div class="absolute -top-4 -left-4 bg-cr-orange text-white px-4 py-2 font-black uppercase tracking-widest text-sm z-10 -rotate-2">
+          Grand Prize
+        </div>
+        <div class="bg-white border-4 border-cr-ink p-6 sm:p-8 card-shadow-blue h-full flex flex-col">
+          <div class="photo-frame mb-6 border-2 border-cr-ink h-56 sm:h-64">
+            <img src="images/4.jpg" alt="Large horizontal wall mural printed and installed on the Color Reflections Philadelphia headquarters" loading="lazy" />
+            <div class="absolute bottom-3 right-3 bg-cr-ink/80 text-white px-3 py-1 text-xs font-bold uppercase tracking-widest z-10">
+              475 N 5th St
+            </div>
+          </div>
+          <h3 class="display text-2xl sm:text-3xl text-cr-ink mb-3">
+            Headquarters Wall Mural
+          </h3>
+          <p class="text-base leading-relaxed text-cr-ink/90 mb-5">
+            One selected artist will have their work printed as the massive horizontal wall graphic at Color Reflections Philadelphia.
+          </p>
+          <div class="mt-auto grid grid-cols-2 gap-2 text-xs font-bold">
+            <div class="bg-cr-paper border-2 border-cr-ink px-3 py-2">307" x 145"</div>
+            <div class="bg-cr-paper border-2 border-cr-ink px-3 py-2">Horizontal</div>
+            <div class="bg-cr-paper border-2 border-cr-ink px-3 py-2">50 to 100 DPI</div>
+            <div class="bg-cr-paper border-2 border-cr-ink px-3 py-2">CMYK</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Runner-Up: Pole Banners -->
+      <div class="relative">
+        <div class="absolute -top-4 -left-4 bg-cr-green text-cr-ink px-4 py-2 font-black uppercase tracking-widest text-sm z-10 rotate-2">
+          Runners-Up
+        </div>
+        <div class="bg-white border-4 border-cr-ink p-6 sm:p-8 card-shadow-orange h-full flex flex-col">
+          <div class="photo-frame mb-6 border-2 border-cr-ink h-56 sm:h-64">
+            <img src="images/1.jpg" alt="Vertical street pole banner installed on a Philadelphia avenue" loading="lazy" />
+            <div class="absolute bottom-3 right-3 bg-cr-ink/80 text-white px-3 py-1 text-xs font-bold uppercase tracking-widest z-10">
+              N 5th Street
+            </div>
+          </div>
+          <h3 class="display text-2xl sm:text-3xl text-cr-ink mb-3">
+            N 5th Street Pole Banners
+          </h3>
+          <p class="text-base leading-relaxed text-cr-ink/90">
+            Selected runners-up may have their work featured on branded N 5th Street pole banners created by the Color Reflections print team.
+          </p>
+        </div>
+      </div>
+
+      <!-- Artist Spotlights -->
+      <div class="relative md:col-span-2 lg:col-span-1">
+        <div class="absolute -top-4 -left-4 bg-cr-blue text-white px-4 py-2 font-black uppercase tracking-widest text-sm z-10 -rotate-2">
+          Exposure
+        </div>
+        <div class="bg-cr-ink text-white border-4 border-cr-ink p-6 sm:p-8 card-shadow h-full flex flex-col">
+          <h3 class="display text-2xl sm:text-3xl mb-3 mt-2">
+            Artist Spotlights
+          </h3>
+          <p class="text-base leading-relaxed text-white/85 mb-5">
+            Winners, runners-up, and selected submissions may be featured in a dedicated website blog post and individual social media spotlights with artist names and Instagram tags.
+          </p>
+          <ul class="mt-auto space-y-2 text-sm font-semibold">
+            <li class="flex items-start gap-2"><span class="text-cr-yellow shrink-0">&rarr;</span> Dedicated website blog post</li>
+            <li class="flex items-start gap-2"><span class="text-cr-yellow shrink-0">&rarr;</span> Individual social media spotlights</li>
+            <li class="flex items-start gap-2"><span class="text-cr-yellow shrink-0">&rarr;</span> Artist names credited</li>
+            <li class="flex items-start gap-2"><span class="text-cr-yellow shrink-0">&rarr;</span> Instagram tags when provided</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOCK FEATURE -->
+<section class="bg-white border-y-4 border-cr-ink">
+  <div class="grid lg:grid-cols-2">
+    <div class="photo-frame min-h-[420px] sm:min-h-[520px] lg:min-h-[600px] order-2 lg:order-1">
+      <img src="images/5.jpg" alt="Aerial view of the Color Reflections Philadelphia headquarters and the surrounding N 5th Street block" loading="lazy" />
+      <div class="absolute top-4 left-4 bg-cr-yellow text-cr-ink px-3 py-1 text-xs font-black uppercase tracking-widest z-10">
+        Outside our front door
+      </div>
+    </div>
+    <div class="order-1 lg:order-2 bg-cr-blue text-white p-8 sm:p-12 lg:p-16 flex flex-col justify-center relative overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-cr-orange/30 rounded-full blur-2xl"></div>
+      <div class="relative">
+        <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-yellow mb-3">This is the canvas</div>
+        <h2 class="display text-4xl sm:text-5xl lg:text-6xl mb-5 leading-tight">
+          Right here. N 5th Street.
+        </h2>
+        <p class="text-base sm:text-lg text-white/90 leading-relaxed mb-6">
+          This is the building. This is the wall the Grand Prize mural goes on. This is the sidewalk people walk down all summer. The winning piece goes big and public, right here.
+        </p>
+        <ul class="space-y-3 text-sm sm:text-base font-semibold mb-8">
+          <li class="flex items-start gap-3">
+            <span class="text-cr-yellow font-black shrink-0">&rarr;</span>
+            <span>High-foot-traffic Center City corridor</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-cr-yellow font-black shrink-0">&rarr;</span>
+            <span>Real building wall, not a mockup</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-cr-yellow font-black shrink-0">&rarr;</span>
+            <span>Printed, installed, and revealed by July 4th</span>
+          </li>
+        </ul>
+        <a href="#submit" class="inline-block bg-cr-yellow text-cr-ink font-black uppercase tracking-widest px-7 py-4 text-sm sm:text-base hover:bg-white transition">
+          Get Your Art on This Wall
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE THAN A PRINT PLACEMENT -->
+<section class="bg-cr-paper py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-10 sm:mb-12">
+      <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-orange mb-3">More Than a Print Placement</div>
+      <h2 class="display text-4xl sm:text-5xl lg:text-6xl text-cr-blue leading-[0.95]">
+        Your art goes up. Your name goes with it.
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-cr-ink/80 max-w-2xl">
+        Selected artists are spotlighted online, not just on the wall. We credit you and tag you so the community knows whose work they are seeing.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div class="bg-white border-2 border-cr-ink p-5">
+        <div class="display text-cr-blue text-2xl mb-2">01</div>
+        <div class="font-bold text-sm sm:text-base">Dedicated website blog post</div>
+      </div>
+      <div class="bg-white border-2 border-cr-ink p-5">
+        <div class="display text-cr-orange text-2xl mb-2">02</div>
+        <div class="font-bold text-sm sm:text-base">Individual social media spotlights</div>
+      </div>
+      <div class="bg-white border-2 border-cr-ink p-5">
+        <div class="display text-cr-green text-2xl mb-2">03</div>
+        <div class="font-bold text-sm sm:text-base">Artist names credited</div>
+      </div>
+      <div class="bg-white border-2 border-cr-ink p-5">
+        <div class="display text-cr-red text-2xl mb-2">04</div>
+        <div class="font-bold text-sm sm:text-base">Instagram tags when provided</div>
+      </div>
+      <div class="bg-white border-2 border-cr-ink p-5">
+        <div class="display text-cr-blue text-2xl mb-2">05</div>
+        <div class="font-bold text-sm sm:text-base">Public-facing physical installation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATES -->
+<section id="dates" class="anchor-offset bg-cr-blue text-white py-16 sm:py-24 relative overflow-hidden">
+  <div class="absolute -top-12 -left-12 w-48 h-48 bg-cr-orange/20 rounded-full"></div>
+  <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-cr-yellow/20 rounded-full"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-12 sm:mb-16">
+      <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-yellow mb-3">Mark Your Calendar</div>
+      <h2 class="display text-4xl sm:text-6xl">Dates that matter.</h2>
+    </div>
+
+    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4">
+      <li class="bg-white text-cr-ink p-6 border-4 border-cr-green relative">
+        <div class="display text-cr-orange text-5xl mb-2">01</div>
+        <div class="text-xs uppercase tracking-widest font-bold text-cr-blue mb-1">Contest Launches</div>
+        <div class="display text-xl sm:text-2xl mb-1">June 1, 2026</div>
+        <div class="text-sm font-semibold">&nbsp;</div>
+        <p class="text-sm mt-3 text-cr-ink/70">Submissions open. Start your file.</p>
+      </li>
+      <li class="bg-white text-cr-ink p-6 border-4 border-cr-yellow relative">
+        <div class="display text-cr-orange text-5xl mb-2">02</div>
+        <div class="text-xs uppercase tracking-widest font-bold text-cr-blue mb-1">Submissions Close</div>
+        <div class="display text-xl sm:text-2xl mb-1">June 24, 2026</div>
+        <div class="text-sm font-semibold">11:59 PM</div>
+        <p class="text-sm mt-3 text-cr-ink/70">Get your form in and your file uploaded.</p>
+      </li>
+      <li class="bg-white text-cr-ink p-6 border-4 border-cr-orange relative">
+        <div class="display text-cr-orange text-5xl mb-2">03</div>
+        <div class="text-xs uppercase tracking-widest font-bold text-cr-blue mb-1">Winners Selected</div>
+        <div class="display text-xl sm:text-2xl mb-1">June 25 to 26</div>
+        <div class="text-sm font-semibold">&nbsp;</div>
+        <p class="text-sm mt-3 text-cr-ink/70">Production files delivered to the print team.</p>
+      </li>
+      <li class="bg-white text-cr-ink p-6 border-4 border-cr-blue relative">
+        <div class="display text-cr-orange text-5xl mb-2">04</div>
+        <div class="text-xs uppercase tracking-widest font-bold text-cr-blue mb-1">Public Reveal</div>
+        <div class="display text-xl sm:text-2xl mb-1">July 4, 2026</div>
+        <div class="text-sm font-semibold">&nbsp;</div>
+        <p class="text-sm mt-3 text-cr-ink/70">Full public installation reveal.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section id="specs" class="anchor-offset bg-cr-paper py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-10 sm:mb-12">
+      <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-orange mb-3">Artwork Submission Specs</div>
+      <h2 class="display text-4xl sm:text-6xl text-cr-blue leading-[0.95]">
+        One file. One format. No aspect ratio gymnastics.
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-cr-ink/80 max-w-2xl">
+        Submit one horizontal artwork file. Color Reflections will handle any runner-up pole banner formatting in-house.
+      </p>
+    </div>
+
+    <!-- Single artwork spec card -->
+    <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+      <div class="bg-white border-4 border-cr-ink p-6 sm:p-8 card-shadow">
+        <div class="flex items-start justify-between gap-4 mb-5">
+          <div>
+            <div class="text-xs uppercase tracking-widest text-cr-orange font-bold mb-2">The Only Spec You Need</div>
+            <h3 class="display text-2xl sm:text-3xl text-cr-ink">Horizontal Headquarters Wall Artwork</h3>
+          </div>
+          <div class="shrink-0 bg-cr-blue text-white px-3 py-2 font-bold text-xs uppercase tracking-widest">HQ Wall</div>
+        </div>
+        <dl class="divide-y divide-cr-ink/10">
+          <div class="py-3 flex justify-between gap-4">
+            <dt class="font-semibold text-cr-ink/70">Dimensions</dt>
+            <dd class="font-bold text-right">307" wide &times; 145" tall</dd>
+          </div>
+          <div class="py-3 flex justify-between gap-4">
+            <dt class="font-semibold text-cr-ink/70">Format</dt>
+            <dd class="font-bold text-right">Horizontal only</dd>
+          </div>
+          <div class="py-3 flex justify-between gap-4">
+            <dt class="font-semibold text-cr-ink/70">Resolution</dt>
+            <dd class="font-bold text-right">50 to 100 DPI at full final size</dd>
+          </div>
+          <div class="py-3 flex justify-between gap-4">
+            <dt class="font-semibold text-cr-ink/70">Color mode</dt>
+            <dd class="font-bold text-right">CMYK</dd>
+          </div>
+          <div class="py-3 flex justify-between gap-4">
+            <dt class="font-semibold text-cr-ink/70">File types</dt>
+            <dd class="font-bold text-right max-w-[16rem]">TIFF, PSD, or vector PDF preferred. High-res JPG accepted if print-ready.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Do Not Send (kept small and low-key) -->
+      <div class="bg-white border-4 border-cr-ink p-6 sm:p-8">
+        <div class="text-xs uppercase tracking-widest text-cr-orange font-bold mb-3">Do Not Send</div>
+        <ul class="space-y-2 text-sm sm:text-base font-semibold text-cr-ink/80">
+          <li class="flex items-start gap-2"><span class="text-cr-red shrink-0">&times;</span> Screenshots</li>
+          <li class="flex items-start gap-2"><span class="text-cr-red shrink-0">&times;</span> 72 DPI web images</li>
+          <li class="flex items-start gap-2"><span class="text-cr-red shrink-0">&times;</span> Social media downloads</li>
+          <li class="flex items-start gap-2"><span class="text-cr-red shrink-0">&times;</span> Word documents</li>
+          <li class="flex items-start gap-2"><span class="text-cr-red shrink-0">&times;</span> Anything low-resolution or not print-ready</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- File Guidelines Callout -->
+    <div class="mt-8 sm:mt-10 bg-cr-blue text-white border-4 border-cr-ink p-6 sm:p-10 card-shadow">
+      <div class="grid md:grid-cols-3 gap-6 md:gap-10 items-center">
+        <div class="md:col-span-2">
+          <div class="text-xs uppercase tracking-widest text-cr-yellow font-bold mb-2">Helpful Resource</div>
+          <h3 class="display text-3xl sm:text-4xl mb-3">Need help building the file?</h3>
+          <p class="text-white/90 text-sm sm:text-base leading-relaxed">
+            Review the Color Reflections file guidelines before uploading. They cover color mode, resolution, fonts, images, bleed, and file naming.
+          </p>
+        </div>
+        <div class="md:col-span-1 flex md:justify-end">
+          <a href="https://storage.googleapis.com/conversations-prod-shared-files/2026-05-20-129f483d-0470-416e-97d1-5e2b057570bd" target="_blank" rel="noopener" class="inline-block bg-cr-yellow text-cr-ink font-black uppercase tracking-widest px-6 py-4 text-sm text-center hover:bg-white transition w-full md:w-auto">
+            View File Guidelines
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBMISSION FORM -->
+<section id="submit" class="anchor-offset bg-cr-paper py-16 sm:py-24 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-cr-yellow/30 to-transparent pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-cr-skyblue/20 to-transparent pointer-events-none"></div>
+
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8 sm:mb-10">
+      <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-orange mb-3">Continue to Artwork Upload</div>
+      <h2 class="display text-4xl sm:text-6xl text-cr-blue mb-4">Start Your Submission</h2>
+      <p class="text-base sm:text-lg text-cr-ink/80 max-w-2xl mx-auto leading-relaxed">
+        Tell us who you are and how to credit your work. After submitting the form, you'll be sent to WeTransfer to upload your artwork.
+      </p>
+    </div>
+
+    <!-- The Form Container -->
+    <div class="bg-white border-4 border-cr-ink p-4 sm:p-8 card-shadow">
+      <!-- Embedded submission form (do not modify the script tag) -->
+      <div id="cr-submission-form">
+        <script
+          id="__custom_form_widget" src="https://www.cdnstyles.com/static/custom_form_widget/v1/custom_form.widget.js"
+          data="eyJiYWNrZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwiYmFzZVVSTCI6Imh0dHBzOi8vZm9ybXMtcHJvZC5hcGlnYXRld2F5LmNvIiwiYm9yZGVyQ29sb3IiOiIjMDAwMDAwIiwiYm9yZGVyUmFkaXVzIjoiNXB4IiwiYm9yZGVyU3R5bGUiOiJzb2xpZCIsImJvcmRlcldpZHRoIjoiMXB4IiwiZm9ybUlkIjoiRm9ybUNvbmZpZ0lELWUwMDZjMjQyLTZhNDctNGU5NC1hODRjLTk0NmY3ZmRiNTE3ZSIsInBhZGRpbmciOiIyMHB4IiwicHJpbWFyeUNvbG9yIjoiIzEwNDc5YiIsInByaW1hcnlGb250Q29sb3IiOiIjMDAwMDAwIiwid2lkdGgiOiIxMDAlIn0="
+        ></script>
+      </div>
+
+      <p class="text-xs sm:text-sm text-cr-ink/60 mt-5 pt-5 border-t-2 border-cr-ink/10">
+        By submitting, you confirm your artwork is your original work and you grant Color Reflections Philadelphia permission to print and display it as part of the America 250 Art Takeover. We will credit you.
+      </p>
+    </div>
+
+    <!-- WeTransfer Reminder Card -->
+    <div class="mt-8 bg-cr-blue text-white border-4 border-cr-ink p-6 sm:p-10 card-shadow">
+      <h3 class="display text-2xl sm:text-3xl mb-2">Then head to WeTransfer.</h3>
+      <p class="text-white/90 text-sm sm:text-base leading-relaxed mb-5">
+        After submitting the form, upload your artwork through WeTransfer and include this exact line in the message box:
+      </p>
+
+      <div class="bg-cr-ink border-2 border-cr-yellow p-4 sm:p-6 mb-5">
+        <div class="text-xs uppercase tracking-widest text-cr-yellow font-bold mb-2">Copy this format</div>
+        <div class="font-mono text-base sm:text-lg break-all">
+          America 250 Contest - <span class="text-cr-yellow">[Your Name]</span>
+        </div>
+        <div class="text-xs sm:text-sm text-white/70 mt-2">
+          Example: America 250 Contest - Jordan Smith
+        </div>
+      </div>
+
+      <div class="bg-white/5 border border-white/20 p-4 sm:p-5">
+        <div class="text-xs uppercase tracking-widest text-cr-yellow font-bold mb-1">WeTransfer Portal</div>
+        <div class="font-mono text-base sm:text-lg break-all text-white/95">
+          cr-philly.wetransfer.com
+        </div>
+        <div class="text-xs sm:text-sm text-white/70 mt-2">
+          Reached automatically after you submit the form.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="anchor-offset bg-white py-16 sm:py-24 border-t-4 border-cr-ink">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-10 sm:mb-12">
+      <div class="text-xs uppercase tracking-[0.25em] font-bold text-cr-orange mb-3">Frequently Asked</div>
+      <h2 class="display text-4xl sm:text-6xl text-cr-blue">Questions, answered.</h2>
+    </div>
+
+    <div class="divide-y-2 divide-cr-ink/10 border-y-2 border-cr-ink/10">
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">Who can submit?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          Local Philadelphia-area artists, designers, illustrators, photographers, muralists, students, and creatives. If you make things and you live, work, or hang out in the Philly area, this is for you.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">What file size should I submit?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          Submit one horizontal file built at 307" wide x 145" tall.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">Do I need to design a pole banner too?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          No. Submit your artwork using the horizontal specs on this page. If selected for pole banners, Color Reflections will handle the banner layout.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">What is the Grand Prize?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          The Grand Prize is the massive headquarters wall mural at Color Reflections Philadelphia.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">What do runners-up receive?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          Multiple runners-up may be featured on N 5th Street pole banners.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">Will artists be credited?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          Yes. Winners, runners-up, and selected submissions may be featured in a dedicated website blog post and individual social media spotlights with names and Instagram tags when provided.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">What file types are accepted?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          TIFF, PSD, or vector PDF preferred. High-res JPGs are accepted if print-ready.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">Can I send a screenshot or social media download?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          No. Send a real print-ready file. Screenshots, 72 DPI images, social media downloads, Word documents, and low-resolution files may be rejected.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">Where do I upload the artwork?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          After you fill out the submission form on this page, you will be automatically redirected to the Color Reflections WeTransfer portal at <span class="font-mono font-bold text-cr-blue">cr-philly.wetransfer.com</span>. Upload your one horizontal file there.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="display text-lg sm:text-xl text-cr-ink">What should I write in the WeTransfer message?</span>
+          <span class="faq-icon shrink-0 w-8 h-8 bg-cr-blue text-white flex items-center justify-center text-2xl font-light">+</span>
+        </summary>
+        <div class="mt-4 text-base text-cr-ink/80 leading-relaxed">
+          Put exactly this in the WeTransfer message box: <span class="font-mono font-bold text-cr-blue">America 250 Contest - [Your Name]</span>. For example: America 250 Contest - Jordan Smith. That is how we match your file to your form entry.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t-4 border-cr-ink py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+      <div>
+        <img src="images/logo.png" alt="Color Reflections Philadelphia" class="h-12 w-auto mb-3" />
+        <p class="text-sm text-cr-ink/70 leading-relaxed">
+          Large-format commercial printing in Philadelphia. Dream it. Print it.
+        </p>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-widest font-bold text-cr-orange mb-3">Visit</div>
+        <div class="text-sm text-cr-ink/80 leading-relaxed">
+          Color Reflections Philadelphia<br/>
+          475 N 5th St<br/>
+          Philadelphia, PA 19123
+        </div>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-widest font-bold text-cr-orange mb-3">Campaign</div>
+        <div class="text-sm text-cr-ink/80 leading-relaxed">
+          America 250 Art Takeover<br/>
+          Submissions close June 24, 2026 at 11:59 PM
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-cr-ink/10 flex flex-col sm:flex-row justify-between gap-4 text-xs text-cr-ink/60">
+      <div>&copy; 2026 Color Reflections Philadelphia. All artwork remains the property of its respective artists.</div>
+      <div class="uppercase tracking-widest">Made in Philly. Printed in Philly.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
